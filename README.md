@@ -8,7 +8,7 @@ This is a prototype to help understand reading SZI files with OpenSeaDragon. It'
 
 Node 22+, pnpm
 
-## Installing dependencies
+## Installing dependencies
 
 ```bash
 pnpm install
