@@ -24,7 +24,7 @@ export type FileEntry = {
   isImage: boolean | undefined;
 };
 
-export class ZipReader {
+export class SziReader {
   url: string;
   fileSize: number;
 

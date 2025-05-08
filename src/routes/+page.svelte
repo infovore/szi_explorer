@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ZipReader, type FileEntry } from '$lib/zip_reader';
+  import { SziReader, type FileEntry } from '$lib/szi_reader';
   import { filesize } from 'filesize';
 
   let urlInputElement: HTMLInputElement;
@@ -7,7 +7,7 @@
   let sziUrl = $state('');
   let entries = $state([] as FileEntry[]);
   let fileSize = $state(0);
-  let reader = $state(undefined as ZipReader | undefined);
+  let reader = $state(undefined as SziReader | undefined);
 
   let previewSrc = $state('');
   let previewText = $state('');
@@ -22,7 +22,7 @@
     previewText = '';
     sziUrl = urlInputElement.value;
 
-    reader = new ZipReader(sziUrl);
+    reader = new SziReader(sziUrl);
     fileSize = await reader.getFileSize();
     entries = await reader.readTableOfContents();
   };
