@@ -69,7 +69,8 @@
           The file should be an SZI (uncompressed ZIP containing a DZI image). Any file extension is
           OK. Any compression is <em>not</em> OK! The URL should serve up a correct
           <code>content-length</code>
-          header when a <code>HEAD</code> request is made.
+          header when a <code>HEAD</code> request is made. It's up to you to ensure the CORS configuration
+          of the file you're requesting will allow your host to connect.
         </div>
       </form>
     </div>
