@@ -1,5 +1,6 @@
-// ZIP Reader using Range Requests
+// SZI Reader using Range Requests
 // This script reads a ZIP file's table of contents without downloading the entire file
+// needs a tidy - there's a bit of LLM assistance in here I'm slowly tidying / wrapping / grokking.
 
 type EOCD = {
   diskNumber: number;
